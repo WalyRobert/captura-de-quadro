@@ -1,3 +1,4 @@
+import {demoVideo} from './utils/demo';
 import React, { useState, useEffect, useRef } from 'react';
 import { VideoFile, ExportFormat } from './types';
 import { convertFrame, safeFilename } from './utils/frames';
@@ -97,7 +98,7 @@ function App() {
         
         {/* Sidebar / File List */}
         <aside className="w-full lg:w-80 flex flex-col gap-6 shrink-0 order-2 lg:order-1">
-          <DropZone onFilesAdded={handleFilesAdded} />
+          <DropZone onFilesAdded={handleFilesAdded} /><button className="border rounded px-4 py-2" onClick={()=>handleFilesAdded([demoVideo()])}>Usar vídeo de exemplo</button>
           
           <div className="flex flex-col gap-3">
              <h2 className="text-sm font-semibold text-slate-400 uppercase tracking-wider flex items-center justify-between">
