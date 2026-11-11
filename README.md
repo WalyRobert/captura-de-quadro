@@ -1,5 +1,7 @@
 # Captura de Quadro
 
+![Captura de Quadro — extração de imagens de vídeos](captura-de-quadro-banner.jpeg)
+
 Extrator local de frames de vídeo com exportação PNG/JPG.
 
 **Estado:** projeto experimental de portfólio, com melhorias de reprodutibilidade e testes. Autor: Waly Robert.
@@ -52,3 +54,4 @@ Use arquivos de exemplo sintéticos ou que você tenha autorização para compar
 Após `npm ci`, execute `npm run diagnostico` para verificar Node, dependências, build e presença de configuração sem revelar chaves ou consumir cota. Execute `npm run iniciar` para compilar a versão atual e abrir o servidor local em um único terminal. A faixa de estado da interface distingue configuração ausente e integração ainda não comprovada. Encontrar uma chave não confirma que ela é válida nem que existe cota gratuita. Nenhum teste de geração é iniciado automaticamente.
 
 O botão **Usar vídeo de exemplo** carrega uma mídia sintética embutida, sem upload ou dependência de IA. No Troca Audio, **Usar tom de exemplo** permite testar a substituição da faixa localmente.
+
